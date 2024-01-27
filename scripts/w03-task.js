@@ -53,13 +53,13 @@ function divide(dividend, divisor) {
     return dividend / divisor;
 }
 
-const divideNumbersArrow = () => {
+const divideNumbers = () => {
     let dividend = Number(document.querySelector("#dividend").value);
     let divisor = Number(document.querySelector("#divisor").value);
     document.querySelector("#quotient").value = divide(dividend, divisor);
 };
 
-document.querySelector("#divideNumbersArrow").addEventListener("click", divideNumbersArrow);
+document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
 
 /* Decision Structure */
