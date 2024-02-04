@@ -25,6 +25,7 @@ myProfile.placesLived.push(
         place: 'Umhlanga, KZN',
         length: '6 months'
     },
+    
     {
         place: 'Nairobi, Kenya',
         length: '22 years'
@@ -38,7 +39,8 @@ myProfile.placesLived.push(
 document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
-document.querySelector('#photo').setAttribute('alt', myProfile.photo);
+document.querySelector('#photo').setAttribute('src', myProfile.photo);
+document.querySelector('#photo').setAttribute('alt', myProfile.name);
 
 
 /* Favorite Foods List*/
