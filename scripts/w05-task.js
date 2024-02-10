@@ -36,21 +36,26 @@ const reset = () => {
 const filterTemples = (temples) => {
     reset();
 
-    let filter = document.getElementById('filtered').value;
+    let filter = document.getElementById('filtered');
 
-    switch (filter) {
-        case 'utah':
-            displayTemples(temples.filter(temple => temple.location.includes('Utah')));
-            break;
-        case 'nonutah':
-            displayTemples(temples.filter(temple => !temple.location.includes('Utah')));
-            break;
-        case 'older':
-            displayTemples(temples.filter(temple => new Date(temple.dedicated) < new Date(1950, 0, 1)));
-            break;
-        case 'all':
-            displayTemples(temples);
-            break;
+    switch (filter.value) {
+        case "utah":
+          displayTemples(
+            temples.filter((temple) => temple.location.includes("Utah"))
+          );
+          break;
+        case "notutah":
+          displayTemples(
+            temples.filter((temple) => !temple.location.includes("Utah"))
+          );
+          break;
+        case "older":
+          displayTemples(
+            temples.filter(
+              (temple) => new Date(temple.dedicated) < new Date(1950, 0, 1)
+            )
+          );
+          break;
         default:
             console.error('Invalid filter option');
     };
@@ -60,6 +65,7 @@ const filterTemples = (temples) => {
 getTemples();
 
 /* Event Listener */
+// Add a change event listener to the filtered dropdown menu
 document.getElementById('filtered').addEventListener('change', () => {
     filterTemples(templeList);
 });
