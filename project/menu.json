@@ -1,0 +1,12 @@
+{
+  "menu": [
+    { "name": "Iced Coffee", "price": 3.50, "category": "coldDrinks", "image": "coffee.jpg" },
+    { "name": "Smoothie", "price": 4.00, "category": "coldDrinks", "image": "smoothie.jpg" },
+    { "name": "Croissant", "price": 2.50, "category": "pastries", "image": "croissant.jpg" },
+    { "name": "Muffin", "price": 2.00, "category": "pastries", "image": "muffin.jpg" },
+    { "name": "Tea", "price": 2.00, "category": "beverages", "image": "tea.jpg" },
+    { "name": "Soda", "price": 2.50, "category": "beverages", "image": "soda.jpg" },
+    { "name": "Burger", "price": 6.00, "category": "normalFood", "image": "burger.jpg" },
+    { "name": "Salad", "price": 5.50, "category": "normalFood", "image": "salad.jpg" }
+  ]
+}
