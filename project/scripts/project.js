@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnBeverages = document.getElementById("btnBeverages");
     const btnNormalFood = document.getElementById("btnNormalFood");
   
-    let menuData; // Variable to store the menu data
+    let menuData;
   
     // Fetch menu data from JSON file
     fetch("menu.json")
       .then(response => response.json())
       .then(data => {
-        menuData = data; // Store menu data in a variable
+        menuData = data;
   
-        // Initial render
+        
         renderMenu(menuData.menu);
       })
       .catch(error => console.error("Error fetching menu data:", error));
   
     // Event listener for "Show All" button
     btnShowAll.addEventListener("click", () => {
-      renderMenu(menuData.menu); // Render all menu items
+      renderMenu(menuData.menu); // show all menu items
     });
   
     // Event listeners for filtering buttons
